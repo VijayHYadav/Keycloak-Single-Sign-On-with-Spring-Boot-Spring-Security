@@ -32,7 +32,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
     @Override
     protected void configure(org.springframework.security.config.annotation.web.builders.HttpSecurity http) throws java.lang.Exception {
         super.configure(http);
-        http.authorizeRequests().antMatchers("contact-us").permitAll()
+        http.authorizeRequests().antMatchers("/contact-us").permitAll()
         .anyRequest().authenticated()
         .and().exceptionHandling().accessDeniedPage("/access-denied");
     }

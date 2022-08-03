@@ -14,7 +14,7 @@
      <div class="container">
         <h2 class="form-signin-heading">
           Welcome 
-          <span th:text="${#authentication.getPrincipal().getUsername()}">.</span>
+          <span th:text="${#authentication.getPrincipal()}">.</span>
           <a href="/logout">Logout</a>
         </h2>
        
